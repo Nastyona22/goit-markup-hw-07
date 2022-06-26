@@ -32,8 +32,8 @@
 
 .employees-position,
 .employees-name {
-    font-size: 16px;
-    line-height: 1.19;
+    @include font($fs: 16px, $lh: 1.19);
+ 
 }
 
 .employees-position {

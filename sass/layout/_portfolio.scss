@@ -18,11 +18,8 @@
     border: 1px solid transparent;
 
     font-family: var(--primary-font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-
-    letter-spacing: 0.03em;
+    @include font(500, 16px, 1.63, 0.03em);
+  
     outline: transparent;
 
     color: var(--primary-text-color-theme-light);
@@ -44,11 +41,8 @@
 
 .case {
     margin-bottom: 4px;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    
+    @include font(700, 18px, 2, 0.06em);
     color: var(--primary-text-color-theme-light);
 
 }
@@ -101,10 +95,10 @@
 
     color: var(--primary-text-color-theme-dark);
     background-color: rgba(33, 150, 243, 0.9);
-    ;
+    
 
-    font-size: 18px;
-    line-height: 1.56;
+    @include font($fs: 18px, $lh: 1.56);
+   
 
     transform: translateY(101%);
     transition: transform 250ms var(--timing-function);
@@ -125,9 +119,8 @@
 }
 
 .type-case {
-    font-size: 16px;
-    line-height: 1.88;
-
+    @include font($fs: 16px, $lh: 1.88);
+    
     color: var(--secondary-text-color-theme-light);
 }
 

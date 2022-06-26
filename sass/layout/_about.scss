@@ -28,8 +28,8 @@
     justify-content: center;
     transform: translateY(-100%);
 
-    font-size: 14px;
-    line-height: 1.14;
+    @include font($fs:14px, $lh:1.14);
+   
     text-transform: uppercase;
     color: var(--primary-text-color-theme-dark);
     background: rgba(47, 48, 58, 0.8);

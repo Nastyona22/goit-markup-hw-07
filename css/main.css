@@ -58,7 +58,7 @@ p {
 
 .logo {
   font-family: var(--logo-font-family);
-  font-weight: 700;
+  @in font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
@@ -759,10 +759,7 @@ address {
   outline: transparent;
   color: var(--primary-text-color-theme-light);
   background-color: var(--background-color-grey);
-  transition: box-shadow 250ms var(--timing-function),
-              background-color 250ms var(--timing-function),
-              color 250ms var(--timing-function),
-              font-family 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .type-project-menu:hover,

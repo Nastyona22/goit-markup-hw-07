@@ -54,10 +54,9 @@ address {
 
     margin-bottom: 20px;
 
-    font-weight: 700;
+    @include font(700, 14px, 1.14);
+
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.14;
     text-transform: uppercase;
     color: var(--background-main-color);
 }
@@ -111,8 +110,8 @@ address {
     background-color: var(--backgound-color);
 
     color: var(--secondary-text-color-theme-dark);
-    font-size: 16px;
-    line-height: 1.25;
+    @include font($fs: 16px, $lh: 1.25);
+   
 
     transition: border 250ms var(--timing-function), outline 250ms var(--timing-function);
 }
