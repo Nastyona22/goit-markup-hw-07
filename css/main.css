@@ -183,6 +183,7 @@ p {
   position: absolute;
   top: 50%;
   left: 12px;
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-input {
@@ -234,10 +235,9 @@ p {
 
 .modal-send-btn {
   padding: 10px 55px;
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 .policy-link {
@@ -248,7 +248,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  transition: border 250ms var(--timing-function);
 }
 
 .icon-checkbox {
@@ -257,6 +258,7 @@ p {
   height: 15px;
   border: 2px solid var(--backgound-color);
   border-radius: 3px;
+  transition: border 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .checkbox:focus + .icon-checkbox {
@@ -565,12 +567,6 @@ header {
   background-color: var(--accent-color);
 }
 
-.button-icon:hover,
-.button-icon:focus {
-  fill: var(--background-main-color);
-  background-color: var(--accent-color);
-}
-
 .block-clients {
   display: flex;
 }
@@ -693,11 +689,12 @@ address {
   border: none;
 }
 
-.footer-form {
-  margin-left: 93px;
+.footer-socials {
+  margin-right: 93px;
+}
+
+.email-singup {
   display: flex;
-  flex-wrap: wrap;
-  min-width: 570px;
 }
 
 .soc-label {
@@ -714,6 +711,7 @@ address {
   color: var(--secondary-text-color-theme-dark);
   font-size: 16px;
   line-height: 1.25;
+  transition: border 250ms var(--timing-function), outline 250ms var(--timing-function);
 }
 
 .footer-input:focus {
@@ -761,7 +759,10 @@ address {
   outline: transparent;
   color: var(--primary-text-color-theme-light);
   background-color: var(--background-color-grey);
-  transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function),
+              background-color 250ms var(--timing-function),
+              color 250ms var(--timing-function),
+              font-family 250ms var(--timing-function);
 }
 
 .type-project-menu:hover,

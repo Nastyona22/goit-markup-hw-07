@@ -88,6 +88,7 @@
     position: absolute;
     top: 50%;
     left: 12px;
+    transition: fill 250ms var(--timing-function);
 }
 
 .modal-input {
@@ -143,13 +144,14 @@
     fill: var(--accent-color);
 }
 
+
+
 .modal-send-btn {
     padding: 10px 55px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 
@@ -163,7 +165,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+    transition: border 250ms var(--timing-function);
 }
 
 
@@ -174,6 +177,7 @@
     height: 15px;
     border: 2px solid var(--backgound-color);
     border-radius: 3px;
+    transition: border 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .checkbox:focus+.icon-checkbox {
@@ -183,7 +187,7 @@
 
 
 
-.checkbox:checked+.icon-checkbox {
+.checkbox:checked +.icon-checkbox {
     background-color: var(--accent-color);
     border: none;
 }

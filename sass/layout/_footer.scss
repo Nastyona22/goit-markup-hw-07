@@ -89,12 +89,12 @@ address {
     border: none;
 }
 
-.footer-form {
-    margin-left: 93px;
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 570px;
+.footer-socials{
+    margin-right: 93px;
+}
 
+.email-singup {
+    display:flex;
 
 }
 
@@ -113,6 +113,8 @@ address {
     color: var(--secondary-text-color-theme-dark);
     font-size: 16px;
     line-height: 1.25;
+
+    transition: border 250ms var(--timing-function), outline 250ms var(--timing-function);
 }
 
 .footer-input:focus {

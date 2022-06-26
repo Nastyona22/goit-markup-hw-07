@@ -240,9 +240,9 @@
         <div class="container footer-list">
             <div class="footer-contacts">
                 <a class="link logo logo-footer" href="/" lang="en">
-                    Web<span class="logo-white">Studio</span>
+                    Web<span class="logo__text logo__text--white">Studio</span>
                 </a>
-                <address class="contact-list">
+                <address>
                     <ul class="list">
                         <li class="footer-contact">
                             <a class="contact-link link" href="https://goo.gl/maps/8Apk7Ke3x36V6BWJ6" target="_blank"
@@ -261,7 +261,7 @@
             </div>
         
         
-            <div>
+            <div class="footer-socials">
                 <p class="title-soc">Присоединяйтесь</p>
                 <ul class="contacts-soc-list list">
                     <li class="soc-item">
@@ -294,17 +294,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
+            <div>
                 <p class="title-soc soc-label">Подпишитесь на рассылку</p>
-                <input type="email" class="footer-input" name="user-email" id="email-singup" placeholder="E-mail">
-        
-                <button type="submit" class="modal-btn sing-up-btn">Подписаться <svg width="24" height="24" class="icon-send">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg></button>
+                
+                <form class="email-singup">
+                    <input type="email" class="footer-input" name="user-email" id="email-singup" placeholder="E-mail">
+                    
+                    <button type="submit" class="modal-btn sing-up-btn">Подписаться <svg width="24" height="24" class="icon-send">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg></button>
+                </form>
+                
         
             </div>
         </div>
-        
     </footer>
 </body>
 
